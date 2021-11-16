@@ -10,7 +10,7 @@ const UrlContainer = (props) => {
         <p>{url.long_url}</p>
       </div>
     )
-  });
+  })
 
   return (
     <section>
@@ -18,5 +18,6 @@ const UrlContainer = (props) => {
     </section>
   )
 }
+
 
 export default UrlContainer;
