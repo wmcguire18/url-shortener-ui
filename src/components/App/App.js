@@ -13,7 +13,19 @@ export class App extends Component {
   }
 
   componentDidMount() {
-  }
+   getUrls()
+     .then(data =>
+       this.setState({
+         urls: data.urls
+       })
+     )
+     .catch(error => {
+       console.log('Error getting data', error)
+       this.setState({
+         hasError: true
+       })
+     })
+ };
 
   render() {
     return (
